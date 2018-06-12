@@ -13,8 +13,6 @@
 		CB133D5C20CF8CEA00AFC12F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB133D5B20CF8CEA00AFC12F /* Assets.xcassets */; };
 		CB133D5F20CF8CEA00AFC12F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB133D5D20CF8CEA00AFC12F /* LaunchScreen.storyboard */; };
 		CB133D6220CF8CEA00AFC12F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D6120CF8CEA00AFC12F /* main.m */; };
-		CB133D6D20CF8D0400AFC12F /* JMSegmentTitleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D6920CF8D0400AFC12F /* JMSegmentTitleConfig.m */; };
-		CB133D6E20CF8D0400AFC12F /* JMSegmentPager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D6B20CF8D0400AFC12F /* JMSegmentPager.m */; };
 		CB133D8A20CF8D1800AFC12F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D7120CF8D1800AFC12F /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CB133D8B20CF8D1800AFC12F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D7A20CF8D1800AFC12F /* ViewController+MASAdditions.m */; };
 		CB133D8C20CF8D1800AFC12F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D7E20CF8D1800AFC12F /* MASCompositeConstraint.m */; };
@@ -26,6 +24,8 @@
 		CB133D9220CF8D1800AFC12F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D8720CF8D1800AFC12F /* MASViewConstraint.m */; };
 		CB133D9320CF8D1800AFC12F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D8820CF8D1800AFC12F /* MASViewAttribute.m */; };
 		CB133D9420CF8D1800AFC12F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB133D8920CF8D1800AFC12F /* Info.plist */; };
+		CB133D9A20CF8E8600AFC12F /* JMSegmentTitleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */; };
+		CB133D9B20CF8E8600AFC12F /* JMSegmentPager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +39,6 @@
 		CB133D5E20CF8CEA00AFC12F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB133D6020CF8CEA00AFC12F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB133D6120CF8CEA00AFC12F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB133D6920CF8D0400AFC12F /* JMSegmentTitleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentTitleConfig.m; sourceTree = "<group>"; };
-		CB133D6A20CF8D0400AFC12F /* JMSegmentPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentPager.h; sourceTree = "<group>"; };
-		CB133D6B20CF8D0400AFC12F /* JMSegmentPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentPager.m; sourceTree = "<group>"; };
-		CB133D6C20CF8D0400AFC12F /* JMSegmentTitleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentTitleConfig.h; sourceTree = "<group>"; };
 		CB133D7020CF8D1800AFC12F /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CB133D7120CF8D1800AFC12F /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		CB133D7220CF8D1800AFC12F /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -69,6 +65,10 @@
 		CB133D8720CF8D1800AFC12F /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		CB133D8820CF8D1800AFC12F /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		CB133D8920CF8D1800AFC12F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentTitleConfig.m; sourceTree = "<group>"; };
+		CB133D9720CF8E8600AFC12F /* JMSegmentPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentPager.h; sourceTree = "<group>"; };
+		CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentPager.m; sourceTree = "<group>"; };
+		CB133D9920CF8E8600AFC12F /* JMSegmentTitleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentTitleConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 		CB133D5120CF8CE900AFC12F /* JMSegmentPager */ = {
 			isa = PBXGroup;
 			children = (
-				CB133D6820CF8D0400AFC12F /* JMScrollContentView */,
+				CB133D9520CF8E8600AFC12F /* JMSegmentPager */,
 				CB133D5220CF8CE900AFC12F /* AppDelegate.h */,
 				CB133D5320CF8CE900AFC12F /* AppDelegate.m */,
 				CB133D5520CF8CE900AFC12F /* ViewController.h */,
@@ -114,17 +114,6 @@
 				CB133D6F20CF8D1800AFC12F /* Masonry */,
 			);
 			path = JMSegmentPager;
-			sourceTree = "<group>";
-		};
-		CB133D6820CF8D0400AFC12F /* JMScrollContentView */ = {
-			isa = PBXGroup;
-			children = (
-				CB133D6A20CF8D0400AFC12F /* JMSegmentPager.h */,
-				CB133D6B20CF8D0400AFC12F /* JMSegmentPager.m */,
-				CB133D6C20CF8D0400AFC12F /* JMSegmentTitleConfig.h */,
-				CB133D6920CF8D0400AFC12F /* JMSegmentTitleConfig.m */,
-			);
-			path = JMScrollContentView;
 			sourceTree = "<group>";
 		};
 		CB133D6F20CF8D1800AFC12F /* Masonry */ = {
@@ -158,6 +147,17 @@
 				CB133D8920CF8D1800AFC12F /* Info.plist */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		CB133D9520CF8E8600AFC12F /* JMSegmentPager */ = {
+			isa = PBXGroup;
+			children = (
+				CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */,
+				CB133D9720CF8E8600AFC12F /* JMSegmentPager.h */,
+				CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */,
+				CB133D9920CF8E8600AFC12F /* JMSegmentTitleConfig.h */,
+			);
+			path = JMSegmentPager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,14 +235,14 @@
 				CB133D6220CF8CEA00AFC12F /* main.m in Sources */,
 				CB133D8E20CF8D1800AFC12F /* MASLayoutConstraint.m in Sources */,
 				CB133D5420CF8CE900AFC12F /* AppDelegate.m in Sources */,
-				CB133D6D20CF8D0400AFC12F /* JMSegmentTitleConfig.m in Sources */,
 				CB133D9320CF8D1800AFC12F /* MASViewAttribute.m in Sources */,
+				CB133D9A20CF8E8600AFC12F /* JMSegmentTitleConfig.m in Sources */,
 				CB133D8F20CF8D1800AFC12F /* NSArray+MASAdditions.m in Sources */,
 				CB133D8C20CF8D1800AFC12F /* MASCompositeConstraint.m in Sources */,
 				CB133D8D20CF8D1800AFC12F /* MASConstraintMaker.m in Sources */,
+				CB133D9B20CF8E8600AFC12F /* JMSegmentPager.m in Sources */,
 				CB133D9020CF8D1800AFC12F /* View+MASAdditions.m in Sources */,
 				CB133D8B20CF8D1800AFC12F /* ViewController+MASAdditions.m in Sources */,
-				CB133D6E20CF8D0400AFC12F /* JMSegmentPager.m in Sources */,
 				CB133D9220CF8D1800AFC12F /* MASViewConstraint.m in Sources */,
 				CB133D8A20CF8D1800AFC12F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CB133D9120CF8D1800AFC12F /* MASConstraint.m in Sources */,
