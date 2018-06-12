@@ -3,11 +3,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMSegmentPager"
-  s.version      = "0.1"
+  s.version      = "0.1.1"
   s.summary      = "打造一个高性能、零耦合的分段控制器"
 
   s.description  = <<-DESC
-  					简单测试版
+  					       修复已知Bug
                    DESC
 
   s.homepage     = "https://github.com/JunAILiang/JMSegmentPager.git"

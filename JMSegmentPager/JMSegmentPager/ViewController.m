@@ -12,6 +12,9 @@
 
 @interface ViewController ()
 
+/** segmentPage */
+@property (nonatomic, strong) JMSegmentPager *segmentPager;
+
 @end
 
 @implementation ViewController
@@ -33,13 +36,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick)];
     [view addGestureRecognizer:tap];
     
-    JMSegmentPager *segmentPage = [[JMSegmentPager alloc] initWithSegmentPagerWithTitleConfig:titleConfig];
-    [segmentPage addCustomView:view AtIndex:7];
-    [self.view addSubview:segmentPage];
+    self.segmentPager = [[JMSegmentPager alloc] initWithSegmentPagerWithTitleConfig:titleConfig];
+    [self.segmentPager addCustomView:view AtIndex:7];
+    [self.view addSubview:self.segmentPager];
     
     
     
-    [segmentPage mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.segmentPager mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
         make.top.mas_equalTo(self.view.mas_top).offset(100);
     }];
@@ -49,6 +52,7 @@
 #pragma mark - 按钮点击事件
 - (void)tapClick {
     NSLog(@"点击了");
+    self.segmentPager.titleSelectIndex = 3;
 }
 
 

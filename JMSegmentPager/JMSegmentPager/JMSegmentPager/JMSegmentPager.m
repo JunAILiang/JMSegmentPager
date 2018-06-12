@@ -14,7 +14,6 @@
 @property (nonatomic, strong) JMSegmentTitleConfig *titleConfig;
 @property (nonatomic, strong) NSMutableArray *btnArrM;
 @property (nonatomic, strong) UIImageView *indicatorIV;
-@property (nonatomic, assign) NSInteger titleSelectIndex;
 
 @end
 

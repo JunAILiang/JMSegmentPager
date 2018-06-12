@@ -152,10 +152,10 @@
 		CB133D9520CF8E8600AFC12F /* JMSegmentPager */ = {
 			isa = PBXGroup;
 			children = (
-				CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */,
 				CB133D9720CF8E8600AFC12F /* JMSegmentPager.h */,
 				CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */,
 				CB133D9920CF8E8600AFC12F /* JMSegmentTitleConfig.h */,
+				CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */,
 			);
 			path = JMSegmentPager;
 			sourceTree = "<group>";

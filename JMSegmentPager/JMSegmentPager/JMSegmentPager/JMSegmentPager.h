@@ -15,6 +15,7 @@
 
 - (instancetype)initWithSegmentPagerWithTitleConfig:(JMSegmentTitleConfig *)titleConfig;
 
+@property (nonatomic, assign) NSInteger titleSelectIndex;
 
 /**
  添加自定义View, 自定义view的点击事件只能自己处理
