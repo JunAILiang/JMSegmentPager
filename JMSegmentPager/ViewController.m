@@ -10,7 +10,9 @@
 #import "JMSegmentPager.h"
 #import "Masonry.h"
 
-@interface ViewController ()
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+@interface ViewController ()<JMSegmentPagerDelegate>
 
 /** segmentPage */
 @property (nonatomic, strong) JMSegmentPager *segmentPager;
@@ -28,25 +30,32 @@
     titleConfig.titleArr = @[@"首页",@"发现",@"首页",@"发现",@"首页",@"发现",@"首页",@"发现"];
     titleConfig.titleHeight = 34.f;
     titleConfig.indicatorType = JMSegmentIndicatorTypeEqualTitle;
-    titleConfig.titleSelectedIndex = 6;
+    titleConfig.isFixedWidth = YES;
+    titleConfig.titleSelectedIndex = 3;
     //    titleConfig.titleAlpha = 0.1f;
     
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor redColor];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick)];
-    [view addGestureRecognizer:tap];
+    JMSegmentContentConfig *contentConfig = [JMSegmentContentConfig segmentContentConfig];
+    NSMutableArray *tempArrM = [NSMutableArray array];
+    for (int i = 0; i < titleConfig.titleArr.count; i++) {
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.view.backgroundColor = kRandomColor;
+        [tempArrM addObject:vc];
+    }
+    contentConfig.controllerArr = tempArrM;
     
-    self.segmentPager = [[JMSegmentPager alloc] initWithSegmentPagerWithTitleConfig:titleConfig];
-    [self.segmentPager addCustomView:view AtIndex:7];
+    
+    self.segmentPager = [[JMSegmentPager alloc] initWithSegmentPagerWithTitleConfig:titleConfig ContentConfig:contentConfig Delegate:self];;
     [self.view addSubview:self.segmentPager];
-    
-    
     
     [self.segmentPager mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.equalTo(self.view);
         make.top.mas_equalTo(self.view.mas_top).offset(100);
     }];
     
+}
+
+- (void)JMSegmentPagerTitle:(NSString *)title Index:(NSInteger)index {
+    NSLog(@"title--%@,  index---%zd",title, index);
 }
 
 #pragma mark - 按钮点击事件

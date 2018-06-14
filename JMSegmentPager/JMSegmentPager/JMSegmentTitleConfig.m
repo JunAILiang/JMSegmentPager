@@ -24,7 +24,8 @@
 
 #pragma mark - 初始化默认配置
 - (void)initSegmentConfig {
-    _titleHeight = 20.f;
+    _titleHeight = 40.f;
+    _titleWidth = 20.f;
     _titleNorColor = [UIColor blackColor];
     _titleSelColor = [UIColor orangeColor];
     _indicatorColor = _titleSelColor;
@@ -33,12 +34,21 @@
     _indicatorType = JMSegmentIndicatorTypeDefault;
     _titleBackgroundColor = [UIColor whiteColor];
     _titleType = JMSegmentTitleTypeIndicatorBottom;
+    _isFixedWidth = NO;
+    _fixedCount = 4;
 }
 
 - (void)setTitleHeight:(CGFloat)titleHeight {
     _titleHeight = titleHeight;
     if (titleHeight < 20) {
         _titleHeight = 20.f;
+    }
+}
+
+- (void)setTitleWidth:(CGFloat)titleWidth {
+    _titleWidth = titleWidth;
+    if (titleWidth < 10) {
+        _titleWidth = 10;
     }
 }
 

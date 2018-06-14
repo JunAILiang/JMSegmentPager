@@ -26,6 +26,7 @@
 		CB133D9420CF8D1800AFC12F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB133D8920CF8D1800AFC12F /* Info.plist */; };
 		CB133D9A20CF8E8600AFC12F /* JMSegmentTitleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */; };
 		CB133D9B20CF8E8600AFC12F /* JMSegmentPager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */; };
+		CB133E6C20D170E600AFC12F /* JMSegmentContentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB133E6B20D170E600AFC12F /* JMSegmentContentConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		CB133D9720CF8E8600AFC12F /* JMSegmentPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentPager.h; sourceTree = "<group>"; };
 		CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSegmentPager.m; sourceTree = "<group>"; };
 		CB133D9920CF8E8600AFC12F /* JMSegmentTitleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSegmentTitleConfig.h; sourceTree = "<group>"; };
+		CB133E6A20D170E600AFC12F /* JMSegmentContentConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSegmentContentConfig.h; sourceTree = "<group>"; };
+		CB133E6B20D170E600AFC12F /* JMSegmentContentConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSegmentContentConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 				CB133D9820CF8E8600AFC12F /* JMSegmentPager.m */,
 				CB133D9920CF8E8600AFC12F /* JMSegmentTitleConfig.h */,
 				CB133D9620CF8E8600AFC12F /* JMSegmentTitleConfig.m */,
+				CB133E6A20D170E600AFC12F /* JMSegmentContentConfig.h */,
+				CB133E6B20D170E600AFC12F /* JMSegmentContentConfig.m */,
 			);
 			path = JMSegmentPager;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				CB133D8B20CF8D1800AFC12F /* ViewController+MASAdditions.m in Sources */,
 				CB133D9220CF8D1800AFC12F /* MASViewConstraint.m in Sources */,
 				CB133D8A20CF8D1800AFC12F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CB133E6C20D170E600AFC12F /* JMSegmentContentConfig.m in Sources */,
 				CB133D9120CF8D1800AFC12F /* MASConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

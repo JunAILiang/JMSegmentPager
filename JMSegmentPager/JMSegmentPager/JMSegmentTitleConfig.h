@@ -45,6 +45,12 @@ typedef NS_ENUM(NSInteger, JMSegmentTitleType) { //标题样式类型
 @property (nonatomic, strong) UIFont *titleFont;
 /** 标题视图的高度(默认 40) 最小高度为20 */
 @property (nonatomic, assign) CGFloat titleHeight;
+/** 标题视图的间距(默认 20) */
+@property (nonatomic, assign) CGFloat titleWidth;
+/** 是否固定宽度(默认 NO) 和fixedCount配套使用 */
+@property (nonatomic, assign) BOOL isFixedWidth;
+/** 固定宽度的个数(默认 4个) */
+@property (nonatomic, assign) NSUInteger fixedCount;
 
 /********************* 指示器配置项 *********************/
 /** 指示器颜色(默认和选中颜色相同) */
